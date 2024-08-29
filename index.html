@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BT Culture</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link
+href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@
+400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppin
+s:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu" class="container__rotulo">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <img src="img/bonsai_logo-removebg-preview.svg" alt="Logo da Alurabooks" class="container__imagem">
+      <h1 class="container__titulo"><b class="container__titulo--negrito">BT</b>Culture</h1>
+
+      <ul class="opções">
+        <input type="checkbox" id="opções-menu" class="opções__botão" />
+        <label for="opções-menu" class="opções__rotulo">
+          <li class="opções__item">Divisões</li>
+        </label>
+
+        <ul class="lista-menu">
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Frutíferas</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Direto do Japão</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Clássicas</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Mais Vendidas</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Promoções</a>
+          </li>
+        </ul>
+        <li class="opções__item"><a href="#" class="opções__link">Carrinho</a></li>
+      </ul>
+
+    </div>
+    <div class="container">
+      <a href="#" class="container__link">
+        <img src="img/Compras.svg" alt="Carrinhos de compras" class="containerbo">
+        <p class="container__texto">Carrinho</p>
+      </a>
+      <a href="#" class="container__link">
+        <img src="img/Usuario.svg" alt="Meu perfil" class="containerbo">
+        <p class="container__texto">Meu perfil</p>
+      </a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Bem-Vindo a Bonsai Tree Culture!</h2>
+    <p class="banner__texto">Encontre em nosso Jardim tudo para deixar sua casa linda!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Que tal uma Cerejeira?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Promoções</h2>
+
+    <div class="carrossel__container">
+      <!-- Slider main container -->
+      <div class="swiper">
+
+        <div class="swiper-pagination"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/vermelha.jpeg"
+              alt="Livro sobre apache kafka e spring boot da alura books"></div>
+          <div class="swiper-slide"><img src="img/roma.webp"
+              alt="Livro sobre liderança em design design da alura books"></div>
+          <div class="swiper-slide"><img src="img/comum.jpeg" alt="Livro sobre javascript assertivo da alura books">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/roxo.png" alt="Livro Guia front end" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/rosa.png" alt="Livro sobre portugol" />
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vendidos</h2>
+
+    <div class="carrossel__container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/roxo.png"
+              alt="Livro sobre apache kafka e spring boot da alura books"></div>
+          <div class="swiper-slide"><img src="img/rosa.png" alt="Livro sobre liderança em design da alura books">
+          </div>
+          <div class="swiper-slide"><img src="img/vermelha.jpeg" alt="Livro sobre portugol"></div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+    
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS REGULARMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Frutíferas</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Diretas do Japão</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Promoções</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Mudas</a>
+      </li>
+    </ul>
+  </section>
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo Bonsai Tree Culture</h2>
+    <ul class="lista-rodapé">
+        <a href="#" class="lista-rodapé__link"> Rua Sergio de Oliveira n°34, São Paulo</a>
+    </ul>
+
+    <ul class="lista-rodapé">
+      <li class="lista-rodapé__titulo">Todos Direitos Reservados</li>
+   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
